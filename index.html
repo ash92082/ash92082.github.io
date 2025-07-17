@@ -59,6 +59,44 @@
       width: 64px;
       height: 64px;
     }
+
+    /* 유튜브 아이콘 스타일 (기존 이미지) */
+    .youtube-icon img {
+      width: 64px;
+      height: 64px;
+    }
+
+    /* 네이버 아이콘 - CSS로 간단 구현 */
+    .naver-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      background-color: #03C75A; /* 네이버 초록색 */
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      border-radius: 12px;
+      text-decoration: none;
+      justify-content: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .naver-icon:hover {
+      background-color: #029c43;
+    }
+    .naver-logo {
+      line-height: 1;
+    }
+    .naver-icon div:last-child {
+      font-size: 14px;
+      margin-top: 6px;
+      font-weight: normal;
+      color: #fff;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -79,29 +117,37 @@
   <section id="about">
     <h2>교회 소개</h2>
     <p>
-      안녕하세요! 구미 형곡동, 형곡중앙시장 근처에 위치한 대한예수교장로회(백석) 주감사교회입니다. <br/>
-      저희 교회는 주님의 사랑을 깊이 느끼고 그 사랑 안에서 함께 성장하는 따뜻하고 건강한 공동체를 꿈꾸며 나아가고 있습니다.
+      안녕하세요! 구미 형곡동, 형곡중앙시장 근처에 위치한<br/>
+      대한예수교장로회(백석) 주감사교회입니다.<br/>
+      저희 교회는 주님의 사랑 안에서 따뜻하고 건강한 공동체를 이루며,  
+      지역 사회와 세계 복음화를 위해 힘쓰고 있습니다.
     </p>
     <p>
-      <strong>사역</strong><br/>
-      붕어빵 전도, 필리핀 선교, 밀알심장재단 협력
+      <strong>교회의 비전과 사명</strong><br/>
+      사랑과 섬김을 실천하며, 말씀과 기도로 하나님의 나라를 확장하는 공동체입니다.
     </p>
+    <p>
+      <strong>주요 사역</strong><br/>
+      붕어빵 전도, 필리핀 선교, 밀알심장재단 협력 등 다양한 사역에 참여하고 있습니다.
+    </p>
+    <p><strong>담임목사 인사말</strong><br/>김호성 목사님께서 따뜻한 환영의 말씀을 전합니다.</p>
   </section>
 
   <section id="worship">
     <h2>예배 안내</h2>
     <ul>
-      <li>주일 예배: 주일 오전 11시</li>
-      <li>주일 오후 성경 공부: 주일 오후 1시 30분</li>
-      <li>수요 기도회: 수요일 오후 9시</li>
+      <li><strong>주일 예배:</strong> 매주 오전 11시, 본당</li>
+      <li><strong>주일 오후 성경 공부:</strong> 오후 1시 30분, 교육관 2층</li>
+      <li><strong>수요 기도회:</strong> 매주 수요일 오후 9시, 본당</li>
     </ul>
+    <p>예배 참석은 누구나 환영하며, 편안한 마음으로 오시면 됩니다.</p>
   </section>
 
   <section id="sermons">
     <h2>설교 영상</h2>
     <p>주감사교회 설교 영상은 아래 유튜브 채널에서 시청하실 수 있습니다.</p>
     <div class="icon-links">
-      <a href="https://www.youtube.com/@%EC%A3%BC%EA%B0%90%EC%82%AC%EA%B5%90%ED%9A%8C/videos" target="_blank">
+      <a href="https://www.youtube.com/@%EC%A3%BC%EA%B0%90%EC%82%AC%EA%B5%90%ED%9A%8C/videos" target="_blank" rel="noopener noreferrer" class="youtube-icon">
         <img src="https://img.icons8.com/color/96/youtube-play.png" alt="YouTube">
         <div>설교 영상</div>
       </a>
@@ -109,12 +155,12 @@
   </section>
 
   <section id="weekly">
-        <h2>교회 소식</h2>
-        <p>주감사교회 주보 및 공지사항은 아래 네이버 블로그에서 확인하실 수 있습니다.</p>
-        <div class="icon-links">
-            <a href="https://blog.naver.com/kimjbylove/223927375981" class="naver-icon" target="_blank" rel="noopener noreferrer">
-                <div class="naver-logo">N</div>
-                <div>주보 / 교회소식</div>
+    <h2>교회 소식</h2>
+    <p>주감사교회 주보 및 공지사항은 아래 네이버 블로그에서 확인하실 수 있습니다.</p>
+    <div class="icon-links">
+      <a href="https://blog.naver.com/kimjbylove/223927375981" target="_blank" rel="noopener noreferrer" class="naver-icon">
+        <div class="naver-logo">N</div>
+        <div>주보 / 교회소식</div>
       </a>
     </div>
   </section>
